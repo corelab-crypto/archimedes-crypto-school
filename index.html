@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Archimedes Workshop on Cryptography 2024"
+    />
+    <meta
+      name="author"
+      content="Thanos Tolias, Antonis Antonopoulos, Danai Balla"
+    />
+    <meta
+      name="robots"
+      content="index, follow, noarchive"
+    />
+    <meta
+      name="revisit-after"
+      content="3 days"
+    />
+    <title>Archimedes Workshop on Cryptography</title>
+
+    <link
+      href="css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="css/animate.css"
+      rel="stylesheet"
+    />
+    <link
+      href="css/style.css"
+      rel="stylesheet"
+    />
+    <link
+      href="color/default.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .alert {
+        display: none;
+
+        padding: 10px;
+        width: 550px;
+        border-radius: 15px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        color: #468847;
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+      }
+
+      .vidimg {
+        cursor: pointer;
+        width: 20px;
+      }
+
+      .bx {
+        -moz-box-shadow: 0 1px 2px grey;
+        -webkit-box-shadow: 0 1px 2px grey;
+        box-shadow: 0 1px 2px grey;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      .abstract {
+        display: none;
+        background-color: #dedede;
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        padding: 10px;
+        text-align: justify;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+
+  <body
+    id="page-top"
+    data-spy="scroll"
+    data-target=".navbar-custom"
+    onload="uncheck()"
+  >
+    <!-- NAVBAR -->
+
+    <nav
+      class="navbar navbar-custom navbar-fixed-top"
+      role="navigation"
+    >
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-main-collapse"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <a
+            class="navbar-brand"
+            href="index.html"
+          >
+            <h1>Archimedes Workshop on Cryptography</h1>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#home">Home</a></li>
+            <!-- <li><a href="#speakers">Speakers</a></li> -->
+            <li><a href="#program">Program</a></li>
+            <li><a href="#register">Registration</a></li>
+            <!-- <li><a href="#talks">Talks</a></li> -->
+            <!-- <li><a href="#abstracts">Abstracts</a></li> -->
+            <li><a href="#sponsors">Sponsors</a></li>
+            <!-- <li><a href="#contact">Contact</a></li> -->
+            <li><a href="#venue">Venue</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- END NAVBAR -->
+
+    <!-- HOME SECTION -->
+
+    <section
+      id="home"
+      class="home-section"
+    >
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <h1>Archimedes Workshop on Cryptography</h1>
+            <h4>July 18-19, 2024</h4>
+            <h4>LOCATION TBD</h4>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <img
+              src="img/Archimides.png"
+              width="90%"
+              class="img-rounded img-responsive center-block d-block mx-auto"
+              alt="Archimedes"
+            />
+            <!-- <img src="img/Archimedes_support.jpg" width=90% class="img-rounded img-responsive center-block d-block mx-auto" alt="Archimedes">-->
+          </div>
+        </div>
+        <hr class="marginbot-50" />
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-8">
+            <h4>Scope</h4>
+            TBD
+
+            <br /><br /><br />
+            <h4>Speakers</h4>
+            <ul>
+              <li>TBD</li>
+            </ul>
+            <br /><br /><br />
+            <!-- <h4>Supported by</h4> -->
+
+            <!-- <div class="row"> -->
+            <!-- <div class="col-xs-4 col-sm-4 col-md-4">
+              <img src="img/ntua_ece.png" width="100%"><br><br>
+
+            </div> -->
+            <!-- <div class="col-xs-8 col-sm-8 col-md-8">
+              Organization of AtheCrypt 2024 is supported by the
+              School of Electrical and Computer Engineering and the Institute of Communication and Computer Systems of
+              the National Techhnical University of Athens.
+            </div> -->
+            <!-- </div> -->
+
+            <!-- <div class="row"> -->
+
+            <!-- <div class="col-xs-8 col-sm-8 col-md-8">
+              Organization of AtheCrypt 2024 is partially supported by the Hellenic Foundation for Research and Innovation (H.F.R.I.) under the ``First Call for H.F.R.I. Research Projects to support Faculty members and Researchers and the procurement of
+              high-cost research equipment grant'', project BALSAM, HFRI-FM17-1424.
+            </div>
+-->
+
+            <!-- </div>  -->
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-4">
+            <!-- <h4>News</h4> -->
+
+            <!-- <hr> -->
+            <h4>Organization</h4>
+            <ul>
+              <li>TBD</li>
+            </ul>
+            <br />
+            <hr />
+
+            <h4>Administration</h4>
+            <ul>
+              <li>TBD</li>
+            </ul>
+            <br />
+            <hr />
+
+            <h4>Contact</h4>
+            <ul>
+              TBD
+            </ul>
+            <br />
+            <hr />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM -->
+    <br /><br />
+    <section
+      id="program"
+      class="home-section bg-gray"
+    >
+      <!-- <p style="margin : 0; margin-top: -220px; padding-top:0;"></p> -->
+      <div class="container">
+        <h2>Program</h2>
+
+        <!-- DAY 1 -->
+        <h4>Thursday, July 18</h4>
+        <table
+          class="table table-hover"
+          width="85%"
+          valign="top"
+        >
+          <!-- <tr>
+          <td width=8%>8:30 - 9:00</td>
+          <td width=50%>Registration - Opening</td>
+        </tr> -->
+          <tr>
+            <td width="8%">TBD</td>
+            <td width="50%">TBD</td>
+          </tr>
+
+          <!-- <tr>
+          <td width=8%>9:00 - 10:20</td>
+          <td width=50%>
+            <b>Tutorial: Perspectives on learning in games - Part I</b>&nbsp;&nbsp;&nbsp;
+            <a href="#"><img src="img/info.png" align="top" onclick="return toggle('abstract1');" alt="Go to Abstract" title="View Abstract"></a>
+            <br>Gabriele Farina, <i>MIT</i>
+            <div id="abstract1" class="abstract">
+              <strong>Abstract</strong>: The main focus of the tutorial will be about learning in games: 
+              The first part of the tutorial will be based on no-regret learning algorithms such as regret matching, 
+              FTRL, OMD and and their optimistic variants for normal-form games. The second part of the tutorial will 
+              be about sequential games, build up to imperfect-information games, regret decomposition, 
+              and if time permits, kernelization.<br>              
+              <strong>Short Bio</strong>: Gabriele Farina is an Assistant Professor at MIT in EECS and LIDS, additionally affiliated with the 
+              Operations Research Center (ORC). He holds the X-Window Consortium Career Development Chair. Before that, he spent a year as 
+              a Research Scientist at FAIR (Meta AI), where he worked on Cicero, a human-level AI agent combining strategic reasoning and 
+              natural language. Before that, he was a Ph.D. student in the Computer Science Department at Carnegie Mellon University, 
+              where he worked with Tuomas Sandholm. He was supported by a 2019-2020 Facebook Fellowship in the area of Economics and 
+              Computation and he is the recipient of ACM SIGecom Doctoral Dissertation Award and NeurIPS 2020 Best Paper Award.
+            </div>
+          </td>
+        </tr> -->
+
+          <tr>
+            <!-- This is just to have a line below last item of program -->
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+
+        <!-- End DAY 1  -->
+
+        <!-- DAY 2 -->
+
+        <h4>Friday, July 19</h4>
+        <table
+          class="table table-hover"
+          width="85%"
+          valign="top"
+        >
+          <tr>
+            <td width="8%">TBD</td>
+            <td width="50%">TBD</td>
+          </tr>
+
+          <tr>
+            <!-- This is just to have a line below last item of program -->
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- END DAY 2 -->
+    </section>
+
+    <!-- REGISTRATION -->
+    <section
+      id="register"
+      class="home-section"
+    >
+      <div class="container">
+        <!-- <div class="row"> -->
+        <!-- <p style="margin : 0; margin-top: -160px; padding-top:0;"></p> -->
+        <!-- <hr class="marginbot-50">-->
+        <h2>Registration</h2>
+        <!-- There are no registration fees. However, participants should register
+          for administrative purposes by filling the workshop's registration
+          form no later than <b>June 23</b>. Due to space constraints, a limited
+          number of seats are available.<br /><br /> -->
+        TBD
+
+        <!-- <b>Registration is now closed.</b><br /><br />
+          <hr class="marginbot-50" /> -->
+        <!-- <a href="https://forms.gle/zzbJ5Dsd7aERJicD9" target="_blank">Registration form</a></b><br><br><hr class="marginbot-50"> -->
+        <!-- </div> -->
+      </div>
+    </section>
+    <!-- </div> -->
+
+    <section
+      id="sponsors"
+      class="home-section"
+    >
+      <!-- <div class="row"> -->
+      <div class="container">
+        <!-- <p style="margin : 0; margin-top: -210px; padding-top:0;"></p> -->
+        <h2>Sponsors</h2>
+
+        <div class="row">
+          <img
+            src="img/Archimedes_support.jpg"
+            width="100%"
+          /><br /><br />
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <!-- <img src="img/Archimides.png" width="100%"><br><br>-->
+            <img
+              src="img/ntua_ece.png"
+              width="100%"
+            />
+          </div>
+          <div class="col-xs-1 col-sm-1 col-md-1"></div>
+          <div class="col-xs-8 col-sm-8 col-md-8">
+            The Archimedes Workshop on Cryptography is organized by the
+            <a
+              href="https://archimedesai.gr/en/"
+              target="_blank"
+              >Archimedes Research Unit </a
+            >of the
+            <a
+              href="https://www.athenarc.gr/en"
+              target="_blank"
+              >Athena Research Center </a
+            >and is supported by the
+            <a
+              href="https://www.ece.ntua.gr/en"
+              target="_blank"
+              >School of Electrical and Computer Engineering</a
+            >
+            of the
+            <a
+              href="https://ntua.gr/en/"
+              target="_blank"
+              >National Technical University of Athens</a
+            >.
+          </div>
+        </div>
+        <br /><br />
+        <hr class="marginbot-50" />
+      </div>
+      <!-- </div> -->
+    </section>
+
+    <!-- <section id="contact" class="home-section">
+      <div class="row">
+       <div class="container">
+         <p style="margin : 0; margin-top: -210px; padding-top:0;"></p>
+  		<h2>Contact</h2>
+		 For participation, possible enquiries and further details, please contact the organizers by email to <a href="mailto:archmodernai@gmail.com">archmodernai@gmail.com</a>.
+		<br><br><hr class="marginbot-50">
+      </div>
+    </div>
+  </section> -->
+
+    <section
+      id="venue"
+      class="home-section"
+    >
+      <div class="container">
+        <h2>Venue</h2>
+        <!-- <hr class="marginbot-50"> -->
+        TBD <br /><br />
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.4276821188137!2d23.800964175443024!3d38.03711989700538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1994a4375b421%3A0x4e6a1aff37d72cdc!2sArchimedes%20Research%20Unit%20-%20Athena%20RC!5e0!3m2!1sel!2sgr!4v1720098837333!5m2!1sel!2sgr"
+              width="500"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              width="100%"
+              height="400"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            You can arrive at TBD by various ways:<br /><br />
+            <h5>By public transport:</h5>
+            TBD<br />
+
+            <br /><br />
+            <h5>By car:</h5>
+            <!-- You can use <a href="https://maps.app.goo.gl/jEUhsWyh8M9st3cf7" target="_blank">this</a> google map to get directions from
+          Alimou-Katechaki Avenue. -->
+            TBD
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </section>
+
+    <!-- <section id="venue" class="home-section">
+      <div class="row">
+       <div class="container">
+         <p style="margin : 0; margin-top: -240px; padding-top:0;"></p>
+  		<h2>Venue</h2>
+      TBD location description
+       <br><br>
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <!-- <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3144.9844588839796!2d23.781929!3d37.977492000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDU4JzM5LjAiTiAyM8KwNDYnNTQuOSJF!5e0!3m2!1sen!2sgr!4v1716826565500!5m2!1sen!2sgr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.4276821188137!2d23.800964175443024!3d38.03711989700538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1994a4375b421%3A0x4e6a1aff37d72cdc!2sArchimedes%20Research%20Unit%20-%20Athena%20RC!5e0!3m2!1sel!2sgr!4v1720098837333!5m2!1sel!2sgr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          You can arrive at the Administration Buliding of NTUA in various ways:<br><br>
+          <b>By public transport:</b> 
+          <br> TBD
+          <br>
+          <b>By car:</b> 
+          <!-- You can use <a href="https://maps.app.goo.gl/jEUhsWyh8M9st3cf7" target="_blank">this</a> google map to get directions from
+          Alimou-Katechaki Avenue. -->
+    <!-- TBD
+        </div>
+      </div>
+      <br><br>
+    </div>
+      </div>
+  </section>  -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script
+      type="text/javascript"
+      async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"
+    ></script>
+  </body>
+</html>

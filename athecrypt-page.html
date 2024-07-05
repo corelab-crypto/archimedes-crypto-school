@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AtheCrypt 2024 Athens Cryptography Workshop 2024" />
+  <meta name="keywords" content="AtheCrypt2024,AtheCrypt 2024,Athens Cryptography 2024,Corelab,NTUA,Greece" />
+  <meta name="author" content="Antonis Antonopoulos" />
+  <meta name="copyright" content="Computation and Reasoning Laboratory 2024" />
+  <meta name="robots" content="index, follow, noarchive" />
+  <meta name="revisit-after" content="12 Hours" />
+  <title>AtheCrypt2024</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/animate.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet">
+  <link href="color/default.css" rel="stylesheet">
+
+  <style>
+    .alert {
+
+      display: none;
+
+      padding: 10px;
+      width: 550px;
+      border-radius: 15px;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+      color: #468847;
+      background-color: #dff0d8;
+      border-color: #d6e9c6;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+    }
+
+    .vidimg {
+      cursor: pointer;
+      width: 20px;
+
+
+
+    }
+
+    .bx {
+      -moz-box-shadow: 0 1px 2px grey;
+      -webkit-box-shadow: 0 1px 2px grey;
+      box-shadow: 0 1px 2px grey;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    .abstract {
+      display: none;
+      background-color: #dedede;
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      padding: 10px;
+      text-align: justify;
+      margin-bottom: 15px;
+    }
+    .Bio {
+      display: none;
+      background-color: #dedede;
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      padding: 10px;
+      text-align: justify;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom" onload="uncheck()">
+
+  <!-- <div id="preloader">
+	  <div id="load"></div>
+	</div> -->
+
+  <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <h1>AtheCrypt 2024</h1>
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#program">Program</a></li>
+          <!-- <li><a href="#talks">Talks</a></li> -->
+          <!-- <li><a href="#abstracts">Abstracts</a></li> -->
+          <li><a href="#venue">Venue</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section id="home" class="home-section">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+
+          <h1>AtheCrypt 2024</h1>
+          <h3>Athens Cryptography Day</h3>
+          <h4>May 23<sup>rd</sup>, 2024</h4>
+          <h4>National Technical University of Athens</h4>
+
+
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <img src="img/ntua31.png" width=90% class="img-rounded img-responsive center-block d-block mx-auto"
+            alt="NTUA Lib">
+        </div>
+
+      </div>
+      <hr class="marginbot-50">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8">
+
+          <h4>Scope</h4>
+          Athens Cryptography Day is an annual event.<br>
+          Its purpose is to give the opportunity to students and scientists in Greece and abroad to observe talks from
+          renowned
+          and promising researchers working in all areas of Cryptography.
+
+          <br><br><br>
+          <h4>Speakers</h4>
+            <ul>
+             <li>Zeta Avarikioti (<i>TU Wien, Common Prefix</i>)</li>
+             <li>Pyrros Chaidos (<i>IOG, University of Athens</i>)</li>
+             <li>George Kadianakis (<i>Ethereum Foundation</i>)</li>
+             <li>Dimitris Karakostas (<i>University of Edinburgh, Common Prefix</i>)</li>
+             <li>Aggelos Kiayias (<i>University of Edinburgh, IOG</i>)</li>
+             <li>George Papadoulis (<i>National Technical University of Athens</i>)</li>
+             <li>Zoe Paraskevopoulou (<i>National Technical University of Athens, Ethereum Foundation</i>)</li>
+             <li>Yannis Smaragdakis (<i>Dedaub, University of Athens</i>)</li>
+             <li>Katerina Sotiraki (<i>Yale University, Archimedes/Athena RC</i>)</li>
+             <li>Marianna Spyrakou (<i>National Technical University of Athens</i>)</li>
+             <li>Apostolos Tzinas (<i>National Technical University of Athens, Common Prefix</i>)</li>
+             <!-- <li>Vassilis Zikas (<i>Purdue University</i>)</li> -->
+             <li>Dionysis Zindros (<i>Common Prefix</i>)</li>
+            </ul>
+          <br><br><br>
+          <h4>Supported by</h4>
+
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4">
+              <img src="img/ntua_ece.png" width="100%"><br><br>
+
+            </div>
+            <img src="img/iccs2.jpg" width="10%">
+            <!-- <div class="col-xs-8 col-sm-8 col-md-8">
+              Organization of AtheCrypt 2024 is supported by the
+              School of Electrical and Computer Engineering and the Institute of Communication and Computer Systems of
+              the National Techhnical University of Athens.
+            </div> -->
+          </div>
+
+
+          <h4>Sponsors</h4>
+
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4">
+              <img src="ace.png" width="80%">
+            </div>
+           <!-- <div class="col-xs-8 col-sm-8 col-md-8">
+              Organization of AtheCrypt 2024 is partially supported by the Hellenic Foundation for Research and Innovation (H.F.R.I.) under the ``First Call for H.F.R.I. Research Projects to support Faculty members and Researchers and the procurement of
+              high-cost research equipment grant'', project BALSAM, HFRI-FM17-1424.
+            </div>
+-->
+
+          </div> 
+
+          <!-- <center>
+            <img src="img/iccs2.jpg" width="15%">
+            <img src="img/ntua_ece.png" width="50%">
+</center> -->
+
+          <!-- <h4>Plenary Talks</h4>
+<ul> -->
+          <!-- </ul> -->
+
+          <!-- <img src="img/iccs2.jpg" height="124"> -->
+          <!-- <img src="img/ntua_ece.png" height="124"> -->
+
+
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-4">
+          <!-- <h4>News</h4> -->
+
+          <!-- <hr> -->
+          <h4>Organization</h4>
+          <ul>
+            <li>Stathis Zachos</li>
+            <li>Aris Pagourtzis</li>
+            <li>Vassilis Zikas</li>
+            <li>Nikos Leonardos</li>
+            <li>Dionysis Zindros</li>
+            <li>Petros Potikas</li>
+            <li>Pouran Behrouz</li>
+            <li>Marianna Spyrakou</li>
+            <li>Danai Balla</li>
+          </ul>
+          <br>
+          <hr>
+
+          <h4>Administration</h4>
+          <ul>
+            <li>Antonis Antonopoulos</li>
+            <li>Ioanna Protekdikou</li>
+          </ul>
+          <br>
+          <hr>
+
+          <h4>Contact</h4>
+          <ul>
+		athecrypt@corelab.ntua.gr
+          </ul>
+          <br>
+          <hr>
+
+
+
+
+          <h4>Links</h4>
+          <ul>
+            <li><a href="http://corelab.ntua.gr" target="new">CoReLab</a><br><br></li>
+          </ul>
+          <h5>Previous AtheCrypts</h5>
+          <ul>
+              <a href="https://mega-ace.corelab.ntua.gr/index.php/about" target="_blank">AtheCrypt 2023 </a><br>
+              <a href="http://www.corelab.ntua.gr/athecrypt2022/" target="_blank">AtheCrypt 2022 </a><br>
+              <a href="http://www.corelab.ntua.gr/athecrypt2021/" target="_blank">AtheCrypt 2021 </a><br>
+              <a href="http://www.corelab.ntua.gr/athecrypt2020/" target="_blank">AtheCrypt 2020 </a><br>
+              <a href="http://www.corelab.ntua.gr/athecrypt2019/" target="_blank">AtheCrypt 2019 </a><br>
+              <a href="http://www.corelab.ntua.gr/athecrypt2018/" target="_blank">AtheCrypt 2018 </a><br>
+              <a href="http://www.corelab.ntua.gr/athecrypt2017/" target="_blank">AtheCrypt 2017 </a><br>
+              <a href="http://www.corelab.ntua.gr/athecrypt2016/" target="_blank">AtheCrypt 2016 </a><br>
+              <a href="http://www.corelab.ntua.gr/athecrypt2015/" target="_blank">AtheCrypt 2015 </a><br>
+              <a href="http://www.corelab.ntua.gr/athecrypt2014/" target="_blank">AtheCrypt 2014 </a><br>
+              <a href="http://www.corelab.ntua.gr/athecrypt/" target="_blank">AtheCrypt 2013 </a>
+              
+          </ul>
+          <br>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="register" class="home-section">
+    <div class="container">
+      <div class="row">
+
+
+        <div class="col-lg-12">
+          <h4>Register</h4>
+Please register until May 22, 17:00, in order to secure access to coffee, lunch, etc.
+          <hr class="marginbot-50">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-yALxHpvq3puTKtcccuz2NEiGJAFFYGSKocFr8JlvKTBf_w/viewform?embedded=true" width="100%" height="1118" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+             
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="alert">Hello</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <section id="program" class="home-section bg-gray">
+    <div class="container">
+      <h4>Program</h4>  
+        <hr class="marginbot-50">
+    <b>All times are in Athens time zone: UTC/GMT +2.</b>
+    <table class="table table-hover" width=85%  valign="top" style="font-size: 100%;">
+    
+    
+    <tr>
+      <td width=8%>9:30 - 10:00</td>
+      <td width=50%>Registration</td>
+    </tr>
+    
+    
+    
+    <tr>
+      <td width=8%>10:00 - 10:15</td>
+      <td width=50%>Opening</td>
+    </tr>
+    
+    
+    
+    <tr>
+      <td width=8%>10:15 - 10:45</td>
+      <td>
+      <b>An Optimal Proof of Proof-of-Work</b>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('abstract8');" alt="Go to Abstract" title="View Abstract"></a>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('Bio2');" alt="Go to Bio" title="View Bio"></a>
+      <br>	Zeta Avarikioti
+    
+      <div id="abstract8" class="abstract">
+      <strong>Abstract</strong>: : Designing light clients for Proof-of-Work blockchains has been a foundational problem since Nakamoto's SPV construction in the Bitcoin paper. Over the years, communication was reduced from  O(C) down to O(polylog(C)) in the system's lifetime C. 
+      We present Blink, the first provably secure O(1) light client that does not require a trusted setup.
+      </div>
+
+      <div id="Bio2" class="Bio">
+      
+        <strong> Bio</strong>: Zeta is a scientist at Common Prefix and is an upcoming Assistant Professor at the Technical University of Vienna (TU Wien) in Austria. She is currently a post-doctoral blockchain researcher at TU Wien working with professor Matteo Maffei. She graduated with a PhD from ETH Zürich, advised by Roger Wattenhofer, and holds an engineering degree from the National Technical University of Athens and a masters degree from National Kapodistian University of Athens. She specializes in distributed systems, scaling blockchains via sharding and channels, and the analysis of cryptoeconomic incentives. Among other venues, she has published in USENIX Security, CSF, Financial Cryptography, AFT, AAAI, and SODA. Highlights of her research include the papers BRICK: Asynchronous Payment Channels, Cerberus Channels: Incentivizing Watchtowers for Bitcoin, and Divide and Scale: Formalization of Distributed Ledger Sharding Protocols.
+        </div>
+    
+      </td>
+    </tr>
+    
+    
+    <tr>
+      <td width=8%>10:45 - 11:05</td>
+      <td>
+      <b>On-Chain Timestamps Are Accurate</b>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('abstract3');" alt="Go to Abstract" title="View Abstract"></a>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('Bio3');" alt="Go to Bio" title="View Bio"></a>
+      &nbsp;&nbsp;&nbsp;<a href="slides/timeliness_Tzinas.pdf" class="label label-primary" style="font-size: 0.8em;">Slides</a>
+      <br>Apostolos Tzinas
+      
+      <div id="abstract3" class="abstract">
+      <strong>Abstract</strong>: When Satoshi Nakamoto introduced Bitcoin, a central tenet was that the blockchain functions as a timestamping server. 
+      In the Ethereum era, smart contracts widely assume on-chain timestamps are mostly accurate. 
+      In this paper, we prove this is indeed the case, namely that recorded timestamps do not wildly deviate from real-world time, a property we call timeliness. Assuming a global clock, we prove that all popular mechanisms for constructing blockchains (proof-of-work, longest chain proof-of-stake, and quorum-based proof-of-stake) are timely under honest majority, but a synchronous network is a necessary condition. Next we show that all timely blockchains can be suitably modified, in a black-box fashion, such that all honest parties output exactly the same ledgers at the same round, achieving a property we call supersafety, which may be of independent interest. Conversely, we also show that supersafety implies (perfect) timeliness, completing the circle.
+      </div>
+      <div id="Bio3" class="Bio">
+      
+        <strong> Bio</strong>: Apostolos is a blockchain researcher and engineer at Common Prefix, specialising in blockchain consensus and decentralised finance. His research highlights include On-Chain Timestamps Are Accurate, published in Financial Cryptography 2024, and The Principal–Agent Problem in Liquid Staking, published in Financial Cryptography 2023’s 7th Workshop on Trusted Smart Contracts (WTSC). Apostolos also has extensive experience in deploying and managing both validators and full-nodes across the Ethereum and Cosmos ecosystems. In the past, as a web engineer at Maya Insights and NutriDice, he has gained extensive experience with a wide range of programming languages and technical stacks. Apostolos has a background in algorithms, having competed at national and balkan olympiads in informatics.
+        </div>
+      </td>
+    </tr>
+    
+    
+    
+    <tr>
+      <td width=8%>11:05 - 11:35</td>
+      <td>
+      <b>Rollerblade: Replicated Distributed Protocol Emulation on Top of Ledgers</b>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('abstract4');" alt="Go to Abstract" title="View Abstract"></a>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('Bio4');" alt="Go to Bio" title="View Bio"></a>
+      &nbsp;&nbsp;&nbsp;<a href="slides/rollerblade_zindros.pptx" class="label label-primary" style="font-size: 0.8em;">Slides</a>
+      <br>Dionysis Zindros
+
+  
+    
+      <div id="abstract4" class="abstract">
+      <strong>Abstract</strong>: We observe that most fixed-party distributed protocols can be rewritten by replacing a party with a ledger (such as a blockchain system) and the authenticated channel communication between parties with cross-chain relayers. This transform is useful because blockchain systems are always online and have battle-tested security assumptions.  We provide a definitional framework that captures this analogy.  We model the transform formally, and posit and prove a generic metatheorem that allows translating all theorems from the party setting into theorems in the emulated setting, while preserving analogies between party honesty and ledger security.  In the heart of our proof lies a reduction-based simulation argument.  As an example, our metatheorem can be used to construct a consensus protocol on top of other blockchains, creating a reliable rollup that assumes only the majority of the underlying layer-1s are secure.
+      </div>
+      <div id="Bio4" class="Bio">
+      
+        <strong> Bio</strong>: Dionysis is a co-founder and researcher at Common Prefix focusing on consensus, light clients, bridges, interoperability, and fast bootstrapping. He did his post-doc at Stanford University, advised by David Tse. He holds a PhD from the University of Athens, advised by Aggelos Kiayias, and an Electrical and Computer Engineering degree from the National Technical University of Athens. Among other venues, he has published in IEEE S&P (Oakland), ACM CCS, ESORICS, and Financial Crypto, and presented at Black Hat Europe and Asia. Highlights of his research include the papers Non-Interactive Proofs of Proof-of-Work, Proof-of-Stake Sidechains, Proof-of-Burn, and Proof-of-Work Sidechains.
+  
+        </div>
+      
+    
+      </td>
+    </tr>
+    
+    
+    
+    <tr>
+      <td width=8%>11:35 - 12:10</td>
+      <td width=50%>Break</td>
+    </tr>
+    
+    
+    
+    <tr>
+      <td width=8%>12:10 - 12:55</td>
+      <td>
+      <b>Program Analysis for High-Value Smart Contract Vulnerabilities: Techniques and Insights</b>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('abstract6');" alt="Go to Abstract" title="View Abstract"></a>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('Bio1');" alt="Go to Bio" title="View Bio"></a>
+      <br>Yannis Smaragdakis
+      <div id="abstract6" class="abstract">
+      
+      <strong>Abstract</strong>: A widespread belief in the blockchain security community is that automated techniques are only good for detecting shallow bugs, typically of small value. In this paper, we present the techniques and insights that have led us to repeatable success in automatically discovering high-value smart contract vulnerabilities. 
+      Our vulnerability disclosures have yielded 10 bug bounties, for a total of over $3M, over high-profile deployed code, as well as hundreds of bugs detected in pre-deployment or under-audit code.
+      We argue that the elements of this surprising success are a) a very high-completeness static analysis approach that manages to maintain acceptable precision; b) domain knowledge, provided by experts or captured via statistical inference. We present novel techniques for automatically inferring domain knowledge from statistical analysis of a large corpus of deployed contracts, as well as discuss insights on the ideal precision and warning rate of a promising vulnerability detector. In contrast to academic literature in program analysis, which routinely expects false-positive rates below 50% for publishable results, we posit that a useful analysis for high-value real-world vulnerabilities will likely flag very few programs (under 1%) and will do so with a high false-positive rate (e.g., 95%, meaning that only one-of-twenty human inspections will yield an exploitable vulnerability).
+    </div>
+     
+      <div id="Bio1" class="Bio">
+      
+      <strong> Bio</strong>: Yannis is a Professor in the Department of Informatics of the University of Athens and co-founder of Dedaub, a top blockchain security company. 
+      His area of research is Programming Languages with emphasis on program analysis. He has received an NSF Career award, European Research Council (ERC) Consolidator and Advanced grants, and "best paper" awards at OOPSLA'18, ECOOP'18, ISSTA'12, ASE'07, ISSTA'06, GPCE'04, and USENIX'99. More  information on his work can be found at 
+<a href="https://yanniss.github.io">https://yanniss.github.io</a>
+      </div>
+    
+      </td>
+    </tr>
+    
+    
+    
+    <tr>
+      <td width=8%>12:55 - 13:25</td>
+      <td>
+      <b>
+   Formally Verifying Ethereum Smart Contracts with hevm and Act
+</b>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('abstract7');" alt="Go to Abstract" title="View Abstract"></a>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('Bio7');" alt="Go to Bio" title="View Bio"></a>
+      <br>Zoe Paraskevopoulou
+    
+      <div id="abstract7" class="abstract">
+      <strong>Abstract</strong>: 
+Formal Verification has become a useful tool for ensuring reliability and security of smart contracts. This talk introduces two formal verification tools, hevm and Act, that are currently developed at Ethereum Foundation. hevm is a symbolic execution framework that can verify the correctness of smart contracts against a specified set of properties, identifying potential vulnerabilities. On the other hand, Act is a high-level specification language that allows developers to define the expected behavior of smart contracts and prove properties about using an SMT solver or a proof assistant. This talk will delve into the methodologies behind these tools, illustrating their practical applications.
+      </div>
+    
+      <div id="Bio7" class="Bio">
+      
+      <strong> Bio</strong>:
+Zoe Paraskevopoulou is a formal verification researcher at Ethereum Foundation. Prior to joining Ethereum Foundation, she was a Postdoctoral Fellow at Northeastern University and a PhD student at Princeton University. Her research interests span formal verification, compilers and programming languages, and proof assistants.
+      </div>
+    
+      </td>
+    </tr>
+    
+    
+    
+    
+    <tr>
+     <td width=8%>13:30 - 15:00</td>
+      <td width=50%>Lunch Break</td>
+    </tr>
+    
+    
+    
+    <tr>
+      <td width=8%>15:00 - 15:45</td>
+      <td>
+      <b>Scaling Blockchain Protocols</b>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('abstract9');" alt="Go to Abstract" title="View Abstract"></a>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('Bio21');" alt="Go to Bio" title="View Bio"></a>
+      <br>Aggelos Kiayias
+    
+      <div id="abstract9" class="abstract">
+      <strong>Abstract</strong>:
+	Scalability has been at the forefront  of
+research in blockchain protocols for more than a decade and, today, it still
+remains a critical objective. In this talk i will overview some of the challenges
+that arise in blockchain design as well as in modelling these protocols
+when one takes scalability into consideration. I will also sample  some of my recent
+and ongoing work in this area. 
+      </div>
+
+      <div id="Bio21" class="Bio">
+      
+      <strong> Bio</strong>:
+           Aggelos Kiayias FRSE is chair in Cyber Security and Privacy and director of the Blockchain Technology Laboratory at the University of Edinburgh. He is also the Chief Scientist at blockchain technology company IOG (formerly IOHK). His research interests are in computer security, information security, applied cryptography and foundations of cryptography with a particular emphasis in blockchain technologies and distributed systems, e-voting and secure multiparty protocols as well as privacy and identity management.  His research has been funded by the Horizon 2020 programme (EU), the European Research Council (EU), the Engineering and Physical Sciences Research Council (UK), the Secretariat of Research and Technology (Greece), the National Science Foundation (USA), the Department of Homeland Security (USA), and the National Institute of Standards and Technology (USA). He has received an ERC Starting Grant, a Marie Curie fellowship, an NSF Career Award, and a Fulbright Fellowship. He holds a Ph.D. from the City University of New York and he is a graduate of the Mathematics department of the University of Athens. He has over 100 publications in journals and conference proceedings in the area. He has served as the program chair of the Cryptographers’ Track of the RSA conference in 2011 and the Financial Cryptography and Data Security conference in 2017, as well as the general chair of Eurocrypt 2013. He also served as the program chair of Real World Crypto Symposium 2020 and the Public-Key Cryptography Conference 2020. In 2021 he was elected fellow of the Royal Society of Edinburgh.
+      </div>
+    
+      </td>
+    </tr>
+    
+    
+    
+    <tr>
+      <td width=8%>15:45 - 16:05</td>
+      <td> 
+      <b>AQQUA: Augmenting Quisquis with Auditability</b>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('abstract10');" alt="Go to Abstract" title="View Abstract"></a>
+      &nbsp;&nbsp;&nbsp;<a href="slides/AQQUA.pdf" class="label label-primary" style="font-size: 0.8em;">Slides</a>
+      <br>Dimitris Karakostas
+      <br>George Papadoulis
+    
+      <div id="abstract10" class="abstract">
+      <strong>Abstract</strong>: We propose AQQUA: a digital payment system that combines auditability and privacy. Our scheme extends Quisquis, by adding two authorities; one for registration and one for auditing.
+      These authorities do not intervene in the everyday transaction processing; as a consequence the decentralized nature of the cryptocurrency is not disturbed. 
+      Our construction is account-based. The accounts consist of an updatable public key which functions as a cryptographically unlinkable pseudonym,
+      and commitments to the balance, the total amount of coins spent and the total amount of coins received. In order to participate in the system the user creates an initial account with the registration authority. To protect their privacy, whenever they want to transact they create unlinkable new accounts by updating their public key and the total number of accounts they own (maintained in committed form). The audit authority may request an audit at will. The user must prove in zero-knowledge that all their accounts are compliant to  specific policies.
+      We formally define a security model for the properties that a private and auditable digital payment system should possess and analyze the security of AQQUA.
+      
+      </div>
+    
+      </td>
+    </tr>
+    
+    
+    
+    <tr>
+      <td width=8%>16:05 - 16:35</td>
+      <td>
+      <b>EDI: Towards Measuring Blockchain Decentralization</b>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('abstract12');" alt="Go to Abstract" title="View Abstract"></a>
+      &nbsp;&nbsp;&nbsp;<a href="slides/Karakostas.pdf" class="label label-primary" style="font-size: 0.8em;">Slides</a>
+      <br>Dimitris Karakostas
+      
+    
+      <div id="abstract12" class="abstract">
+      <strong>Abstract</strong>: Decentralization has been touted as the principal security advantage of blockchain-based financial applications. 
+      Its exact semantics nevertheless remain highly contested and ambiguous, with proponents and critics disagreeing widely on the level of decentralization offered by existing systems. The Edinburgh Decentralization Index (EDI) is systematization effort of the current blockchain landscape with respect to decentralization. Our approach dissects blockchain systems into multiple layers, each possibly encapsulating multiple categories, and it enables a unified method for measuring decentralization in each one. This talk will provide an overview of our methodology and the research challenges that arise when trying to define and measure decentralization. It will also include detailed results on two layers, consensus and tokenomics, across multiple systems, like Bitcoin, Ethereum, Cardano and others, which enable a quantitative evaluation and comparison of these systems' decentralization.
+      </div>
+    
+      </td>
+    </tr>
+    
+    
+    
+    <tr>
+      <td width=8%>16:35 - 17:00</td>
+      <td width=50%>Break</td>
+    </tr>
+    
+    
+    
+    <tr>
+      <td width=8%>17:00 - 17:30</td>
+      <td>
+      <b>Sumcheck Arguments and lattice-based succinct arguments</b>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('abstract13');" alt="Go to Abstract" title="View Abstract"></a>
+      &nbsp;&nbsp;&nbsp;<a href="slides/Sotiraki.pdf" class="label label-primary" style="font-size: 0.8em;">Slides</a>
+      <br> Katerina Sotiraki
+      
+    
+      <div id="abstract13" class="abstract">
+      <strong>Abstract</strong>: In this talk, I will present sumcheck arguments; a new class of interactive protocols which show that "split-and-fold protocols" (such as Bulletproofs and many more) are consequences of the Lund et al. sumcheck protocol from 1992.
+      I will explain how many existing commitment schemes can be framed as "sumcheck-friendly commitments" over rings and modules, and how to obtain succinct arguments for NP-complete statements over rings. This gives a lattice-based succinct argument from the SIS assumption, which was previously open. The talk is based on joint works with Jonathan Bootle and Alessandro Chiesa.
+    
+      </div>
+    
+      </td>
+    </tr>
+    
+    
+    <tr>
+      <td width=8%>17:30 - 17:55</td>
+      <td>
+      <b>Beyond the circuit: How to Minimize Foreign Arithmetic in ZKP Circuits</b>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('abstract14');" alt="Go to Abstract" title="View Abstract"></a>
+      <br>George Kadianakis
+    
+      <div id="abstract14" class="abstract">
+      <strong>Abstract</strong>: Zero-knowledge circuits are frequently required to prove gadgets that are not optimised for the constraint system in question. A
+    particularly daunting task is to embed foreign arithmetic such as Boolean operations, field arithmetic, or public-key cryptography.
+    We construct techniques for offloading foreign arithmetic from a zero-knowledge circuit including:
+        (i) equality of discrete logarithms across different groups;
+        (ii) scalar multiplication without requiring elliptic curve operations;
+        (iii) proving knowledge of an AES encryption.
+    To achieve our goal, we employ techniques inherited from rejection sampling and lookup protocols.
+    We implement and provide concrete benchmarks for our protocols.
+    
+      </div>
+    
+      </td>
+    </tr>
+    
+    
+    <tr>
+      <td width=8%>17:55 - 18:00</td>
+      <td width=50%>Break</td>
+    </tr>
+  
+
+    <tr>
+      <td width=8%>18:00 - 18:25</td>
+      <td>
+      <b>
+     Approximate Lower Bound Arguments 
+      </b>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('abstract15');" alt="Go to Abstract" title="View Abstract"></a>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('Bio9');" alt="Go to Bio" title="View Bio"></a>
+      <br>Pyrros Chaidos
+    
+      <div id="abstract15" class="abstract">
+      <strong>Abstract</strong>: 
+Suppose a prover, in possession of a large body of valuable evidence, wants to quickly convince a verifier by presenting only a small portion of the evidence.
+We define an Approximate Lower Bound Argument, or ALBA, which allows the prover to do just that: to succinctly prove knowledge of a large number of elements satisfying a predicate (or, more generally, elements of a sufficient total weight when a predicate is generalized to a weight function). The argument is approximate because there is a small gap between what the prover actually knows and what the verifier is convinced the prover knows. This gap enables very efficient schemes.
+We present noninteractive constructions of ALBA in the random oracle and uniform reference string models and show that our proof sizes are nearly optimal. We also show how our constructions can be made particularly communication-efficient when the evidence is distributed among multiple provers, which is of practical importance when ALBA is applied to a decentralized setting.
+We demonstrate two very different applications of ALBAs: for large-scale decentralized signatures and for proving universal composability of succinct proofs.
+<br>
+<a href="https://link.springer.com/chapter/10.1007/978-3-031-58737-5_3">
+https://link.springer.com/chapter/10.1007/978-3-031-58737-5_3</a>
+      </div>
+    
+      <div id="Bio9" class="Bio">
+      
+      <strong> Bio</strong>:
+Pyrros is an Athens-based cryptographer. He holds a PhD from the University College of London, advised by Jens Groth. His research specializes in zero knowledge proof systems, including applications on proof-of-stake blockchains and circuit-friendly primitives.
+      </div>
+    
+      </td>
+    </tr>
+
+
+ 
+    <tr>
+      <td width=8%>18:25 - 18:45</td>
+      <td>
+      <b>Voting with coercion resistance and everlasting privacy using linkable ring signatures</b>
+      &nbsp;&nbsp;&nbsp;<a href="#"><img src="img/info.png" align="top" onclick="return toggle('abstract16');" alt="Go to Abstract" title="View Abstract"></a>
+      &nbsp;&nbsp;&nbsp;<a href="slides/LRSVote_presentation_spyrakou.pdf" class="label label-primary" style="font-size: 0.8em;">Slides</a>
+      <br>Marianna Spyrakou
+      
+    
+      <div id="abstract16" class="abstract">
+      <strong>Abstract</strong>: We present an electronic voting protocol based on a novel linkable ring signature with unconditional anonymity. All voters create
+    private and public credentials during registration. To construct a ballot they randomly select public credentials as an anonymity set and provide
+    a proof of knowledge of their own secret credential via our linkable ring signature. The unconditional anonymity property prevents an attacker,
+    no matter how powerful, from deducing the identity of the voter, attaining everlasting privacy. Additionally, we provide coercion resistance in
+    the JCJ framework; when an adversary tries to coerce a specific behavior, a voter can evade this attack by creating the signature with a fake
+    but indistinguishable credential. During a moment of privacy the voters can cast their real vote. Our scheme also provides verifiability and ballot
+    secrecy.
+      </div>
+    
+      </td>
+    </tr>
+
+ 
+    
+    <tr>
+      <td width=8%>18:50</td>
+      <td width=50%>Closing remarks</td>
+    </tr>
+    
+    <tr>
+      <td width=8%>20:00</td>
+      <td width=50%>Dinner (<a href="https://maps.app.goo.gl/JFAtN2bvjwVdWMZb7">Dichtaki</a>, Chlois 37, Zografou)</td>
+    </tr>
+   
+ 
+    <!-- <tr><td></td><td></td></tr> -->
+    
+    </table>
+      </div>
+    </div>
+ 
+
+
+  <section id="venue" class="home-section">
+    <div class="container">
+      <h4>Venue</h4>
+      <hr class="marginbot-50">
+      AtheCrypt will take place in the Conference Hall (Αίθουσα Εκδηλώσεων) of the National Technical University of Athens, located in the
+      Administration building. See the map below: <br><br>
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3144.9844588839796!2d23.781929!3d37.977492000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDU4JzM5LjAiTiAyM8KwNDYnNTQuOSJF!5e0!3m2!1sen!2sgr!4v1716826565500!5m2!1sen!2sgr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          You can arrive at NTUA Administration Bld by various ways:<br><br>
+          <h5>By public transport:</h5>
+          The easiest way is by taking the Blue Metro line and getting off at the "ΚΑΤΕΧΑΚΗ" station.
+          Then take the bus 242, get off at stop "ΘΥΡΩΡΕΙΟ" and walk 7 minutes towards Administration Bld ("ΚΤΗΡΙΟ ΔΙΟΙΚΗΣΗΣ").<br>
+          Another option is to take the bus 140 from the "ΚΑΤΕΧΑΚΗ" metro station and get off at stop
+          "ΠΟΛΥΤΕΧΝΕΙΟΥΠΟΛΗ".
+          Then get into the campus and walk 12 minutes towards Administration Bld.<br><br>
+          <h5>By car:</h5>
+          You can use <a href="https://maps.app.goo.gl/jEUhsWyh8M9st3cf7" target="_blank">this</a> google map to get directions from
+          Alimou-Katechaki Avenue.
+        </div>
+      </div>
+      <br><br>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <div class="page-scroll marginbot-30">
+            <a href="#home" id="totop" class="btn btn-circle">
+              <i class="fa fa-angle-double-up animated"></i>
+            </a>
+          </div>
+          <p>&copy;Copyright 2024
+          <div><a href="http://corelab.ntua.gr" target="_blank">Computation and Reasoning Laboratory</a></div>&nbsp; All
+          rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.scrollTo.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+  <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+:root {
+  --dark: #264653;
+
+  --archimedes-pink: #992269;
+
+  --light-pink: #eae3e7;
+
+  --pale-pink: #c48cac;
+
+  --medium-pink: #ba719a;
+
+  --background-white: #f7f7f7;
+}
+
+body {
+  background-color: var(--background-white); /* this is body */
+}
+
+.navbar-brand h1 {
+  color: var(--background-white); /* this is title color of navbar */
+  font-size: 18px;
+}
+
+.navbar-custom {
+  background-color: var(
+    --archimedes-pink
+  ); /* this is navbar color without buttons */
+}
+
+a,
+.tp-caption a.btn:hover {
+  color: #528ca7;
+}
+.top-nav-collapse {
+  background: green;
+}
+.navbar-custom ul.nav {
+  background: var(--archimedes-pink); /* this is buttons of navbar */
+  font-size: small;
+}
+
+.navbar-custom ul.nav li a {
+  color: var(--background-white); /* this is color of navbar buttons text */
+  background: var(--archimedes-pink);
+}
+
+.navbar-custom ul.nav ul.dropdown-menu li a:hover {
+  color: var(--archimedes-pink); /* this is ?? */
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  background-color: #67b0d1;
+}
+
+.widget-avatar .avatar:hover {
+  border: 5px solid #67b0d1;
+}
+
+.bg-skin {
+  background: #67b0d1;
+}
+
+form#contact-form input:focus,
+form#contact-form select:focus,
+form#contact-form textarea:focus {
+  border-color: #67b0d1;
+}
+
+footer {
+  background-color: var(--archimedes-pink);
+}
+
+.btn-skin {
+  color: #fff;
+  background-color: #67b0d1;
+  border-color: #67b0d1;
+}
+
+a {
+  color: var(--archimedes-pink);
+}
+
+a:hover {
+  color: var(--pale-pink);
+}
