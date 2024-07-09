@@ -32,8 +32,25 @@ a,
   color: #528ca7;
 }
 .top-nav-collapse {
-  background: green;
+  background: var(--archimedes-pink);
 }
+
+.top-nav-collapse ul.nav li a:hover {
+  background-color: var(--medium-pink);
+}
+
+.navbar-custom ul.nav li.active {
+  background-color: var(--pale-pink);
+}
+
+.top-nav-collapse ul.nav li.active {
+  background-color: var(--pale-pink);
+}
+
+.navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
+  color: var(--archimedes-pink);
+}
+
 .navbar-custom ul.nav {
   background: var(--archimedes-pink); /* this is buttons of navbar */
   font-size: small;
@@ -44,9 +61,11 @@ a,
   background: var(--archimedes-pink);
 }
 
-.navbar-custom ul.nav ul.dropdown-menu li a:hover {
-  color: var(--archimedes-pink); /* this is ?? */
-}
+/* .navbar-custom ul.nav ul.dropdown-menu li a:hover {
+  color: var(
+    --archimedes-pink
+  ); /* this are colors of buttons on dropdown menu */
+} */
 
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {

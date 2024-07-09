@@ -1,30 +1,15 @@
 /* ==== Google font ==== */
 @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic");
 
-:root {
-  --dark: #264653;
-
-  /* --pink: #e40475; */
-  --archimedes-pink: #992269;
-
-  --light-pink: #eae3e7;
-
-  --pale-pink: #c48cac;
-
-  --medium-pink: #ba719a;
-
-  --background-white: #f7f7f7;
-}
-
 body {
   width: 100%;
   height: 100%;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   color: #666;
-  /* background-color: #fff; */
+  background-color: #fff;
   font-size: 18px;
-  background-color: var(--background-white);
+  background-color: #f7f7f7;
 }
 /*Custom-ies*/
 ul {
@@ -76,8 +61,7 @@ p.lead {
 }
 
 a {
-  /* color: #28c3ab; */
-  color: var(--archimedes-pink);
+  color: #28c3ab;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -86,8 +70,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  /* color: #176e61; */
-  color: var(--medium-pink);
+  color: #176e61;
 }
 
 .light {
@@ -110,8 +93,7 @@ a:focus {
 }
 
 .navbar-brand h1 {
-  /* color: #fff; */
-  color: var(--background-white);
+  color: #fff;
   font-size: 20px;
   line-height: 40px;
 }
@@ -121,22 +103,17 @@ a:focus {
 }
 
 .nav.navbar-nav {
-  /* background-color: rgba(255, 255, 255, 0.4); */
-  background-color: var(--background-white); /* navbar buttons not on scroll */
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .navbar-custom.top-nav-collapse .nav.navbar-nav {
-  /* background-color: rgba(59, 80, 93, 0.91); */
-  background-color: var(
-    --archimedes-pink
-  ); /* color of navbar buttons on scroll */
+  background-color: rgba(59, 80, 93, 0.91);
 }
 
 .navbar-custom ul.nav li a {
   font-size: 12px;
   letter-spacing: 1px;
-  /* color: #2e2e2e; */
-  color: var(--archimedes-pink);
+  color: #2e2e2e;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -165,13 +142,11 @@ a:focus {
 }
 
 .navbar-custom ul.nav ul.dropdown-menu li a:hover {
-  /* background: #fefefe; */
-  background: var(--background-white);
+  background: #fefefe;
 }
 
 .navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
-  /* color: #666; */
-  color: var(--archimedes-pink);
+  color: #666;
 }
 
 .navbar-custom .nav li a {
@@ -695,16 +670,14 @@ Parallax
 
 .btn-circle.btn-dark {
   border: 2px solid #666;
-  /* color: #666; */
-  color: var(--archimedes-pink);
+  color: #666;
 }
 
 .btn-circle:hover,
 .btn-circle:focus {
   outline: 0;
   color: #fff;
-  /* background: rgba(255, 255, 255, 0.1); */
-  color: var(--archimedes-pink);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .btn-circle.btn-dark :hover,
