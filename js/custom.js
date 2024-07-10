@@ -15,6 +15,20 @@
   //		}
   //	});
 
+  
+function adjustContainerMargin() {
+  const navbar = document.getElementById('navbar');
+  const container = document.getElementById('home');
+  const navbarHeight = navbar.offsetHeight;
+  container.style.paddingTop = `${navbarHeight + 20}px`;
+}
+
+// Adjust the margin on page load
+window.onload = adjustContainerMargin;
+
+// Adjust the margin on window resize
+window.onresize = adjustContainerMargin;
+
   //jQuery for page scrolling feature - requires jQuery Easing plugin
   $(function () {
     $(".navbar-nav li a").bind("click", function (event) {

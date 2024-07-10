@@ -12,17 +12,24 @@
   --background-white: #f7f7f7;
 }
 
-/* .navbar-custom container {
-  display: flex;
-} */
-
 body {
   background-color: var(--background-white); /* this is body */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-header.page-scroll .navbar-brand {
+  /* display: block; */
+  height: auto; /* Let the height adjust based on content */
+}
+
+.navbar-header.page-scroll {
+  min-height: auto; /* Remove fixed height constraint */
 }
 
 .navbar-brand h1 {
   color: var(--background-white); /* this is title color of navbar */
   font-size: 18px;
+  margin: 0;
 }
 
 .navbar-custom {
